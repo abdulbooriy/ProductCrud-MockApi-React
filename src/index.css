@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Nunito;
+  src: url("../src/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf");
+}
+
+@import "tailwindcss";
+
+body {
+  background: #f5f6fa;
+}
+
+.container {
+  width: 100%;
+  max-width: 1290px;
+}
+
+@theme {
+  --color-bg-primary: #ffffff;
+}
