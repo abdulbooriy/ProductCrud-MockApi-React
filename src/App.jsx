@@ -1,12 +1,10 @@
-import Product from "@/pages/product/Product";
-import Dashboard from "./components/dashboard/Dashboard";
+import MainRouters from "./pages";
 
 function App() {
   return (
-    <>
-      <Dashboard />
-      <Product />
-    </>
+    <div className="bg-[#F5F6FA]">
+      <MainRouters />
+    </div>
   );
 }
 

@@ -5,15 +5,11 @@
 
 @import "tailwindcss";
 
-body {
-  background: #f5f6fa;
-}
-
 .container {
   width: 100%;
   max-width: 1290px;
 }
 
 @theme {
-  --color-bg-primary: #ffffff;
+  --color-bg-primary: #273142;
 }
