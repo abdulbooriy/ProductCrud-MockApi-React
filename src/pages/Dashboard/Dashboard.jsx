@@ -1,6 +1,7 @@
 import Header from "@/components/header/Header";
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import "./style.css"
 
 const Dashboard = () => {
   return (
@@ -17,16 +18,16 @@ const Dashboard = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/dashboard"}>Dashboard</NavLink>
+            <NavLink className="dashboard__link" to={"/dashboard"}>Dashboard</NavLink>
           </li>
           <li>
-            <NavLink to={"get-products"}>Get All Products</NavLink>
+            <NavLink className="dashboard__link" to={"get-products"}>Get All Products</NavLink>
           </li>
           <li>
-            <NavLink to={"post-products"}>Post Products</NavLink>
+            <NavLink className="dashboard__link" to={"post-products"}>Post Products</NavLink>
           </li>
           <li>
-            <NavLink to={"delete-products"}>Delete Products</NavLink>
+            <NavLink className="dashboard__link" to={"delete-products"}>Delete Products</NavLink>
           </li>
         </ul>
       </div>

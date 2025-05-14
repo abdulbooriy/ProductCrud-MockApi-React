@@ -9,12 +9,12 @@ const DeleteProduct = lazy(() =>
 );
 const Dashboard = lazy(() => import("./Dashboard/Dashboard"));
 
-const MainRouters = () => {
+const MainRouters = ({reload, setReload}) => {
   return (
     <Routes>
     <Route path="/dashboard" element={<Dashboard />}>
-      <Route path="get-products" element={<Suspense><GetProduct /></Suspense>}/>
-      <Route path="post-products" element={<Suspense><PostProduct /></Suspense>}/>
+      <Route path="get-products" element={<Suspense><GetProduct reload={reload} /></Suspense>}/>
+      <Route path="post-products" element={<Suspense><PostProduct setReload={setReload} /></Suspense>}/>
       <Route path="delete-products" element={<Suspense><DeleteProduct /></Suspense>}/>
     </Route>
     </Routes>
